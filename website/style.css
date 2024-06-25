@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One|Source+Sans+Pro');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-size: 110%;
+	color: #ecf0f1;
+	font-family: 'Source Sans Pro', sans-serif;
+	background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+
+}
+
+.main {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.title {
+	font-family: 'Poiret One', cursive;
+	font-size: 2rem;
+  	margin-bottom: .5rem;
+	width: 100%;
+}
+
+.sub-title {
+  	border-top: .1rem solid #fff;
+  	padding: 1rem 4rem;
+	text-align: center;
+}
+
+.sub-title {
+	font-size: 1.2rem;
+  }
+.contact img {
+	display: block;
+	margin: 0 auto;
+	max-width: 200px; /* Change this to your desired value */
+	height: auto;
+  }
+  
+  .main {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	min-height: 100vh;
+	margin-top: 50px;
+  }
+  
+  .contact {
+	margin-top: 20px;
+	text-align: center;
+  }
+  
+  .wrapper .icon{
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 22px;
+  display: inline-block;
+  align-items: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  color: #333;
+  text-decoration: none;
+}
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  line-height: 1.5;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+.wrapper .linkedin:hover,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip::before {
+  background-color: #3b5999;
+  color: #ffffff;
+}
+.wrapper .medium:hover,
+.wrapper .medium:hover .tooltip,
+.wrapper .medium:hover .tooltip::before {
+  background-color: #46c1f6;
+  color: #ffffff;
+}
+.wrapper .aws:hover,
+.wrapper .aws:hover .tooltip,
+.wrapper .aws:hover .tooltip::before {
+  background-color: #FF9900;
+  color: #ffffff;
+}
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.wrapper .CV:hover,
+.wrapper .CV:hover .tooltip,
+.wrapper .CV:hover .tooltip::before {
+  background-color: #8e8d8d;
+  color: #ffffff;
+}
+
+.footer {
+	position: absolute;
+	left: 0;
+	bottom: 0px;
+	text-align: center;
+	width: 100%;
+  }
+
+@media all 
+and (min-device-width : 540px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio: 1){
+	.main {
+		position: initial;
+	}
+	.footer {
+		position: initial;
+		padding-top: 30px;
+	}
+	html{
+		overflow-y: scroll;
+		height: auto;
+	}
+	body{
+		position: initial;
+		height: auto;
+	}
+}
+@media all and (max-width:575px){
+	.wrapper .icon {
+		margin: 0px 6px;
+		width: 45px;
+		height: 45px;
+		line-height: 45px;
+		transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+		color: #333;
+		text-decoration: none;
+	}
+	.main {
+		margin-top: 25px;
+	}
+	.title {
+		font-size: 26px;
+	}
+}
+@media all and (max-width:365px){
+	.contact img {
+		max-width: 120px;
+	}
+	.title {
+		font-size: 23px;
+	}
+	.sub-title {
+		font-size: 1rem;
+	}
+	.wrapper .icon {
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+	}
+	.wrapper .icon {
+		font-size: 20px;
+	}
+	.footer span {
+		font-size: 18px !important;
+	}
+}
