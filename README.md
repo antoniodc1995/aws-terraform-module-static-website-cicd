@@ -33,10 +33,10 @@ I completed the project in several phases:
 6. **Implement the Amazon CloudFront distribution module**  
    Configured CloudFront to ensure content delivery from the S3 bucket through the SSL certificate. The bucket is associated with a policy for CloudFront. Finally, with an alias record, my domain is linked to the CloudFront distribution, routing domain traffic to the distribution.
 
-- Here's my [website] (https://antoniodececio.com/).
+- Here's my ![website] (https://antoniodececio.com/).
 
 ## Resources used
 
-- [Cloud Resume Challenge] (https://cloudresumechallenge.dev/);
-- [ Static Web Hosting on AWS Series: Terraform Modules & GitHub Actions] (https://www.youtube.com/playlist?list=PLfmMgg_VrrlAz4s0UxLCdgZlcw2iCqVrD);
-- [Responsive Portfolio Website From Scratch] (https://www.youtube.com/watch?v=ldwlOzRvYOU&list=LL&index=13&t=6401s&ab_channel=HowtoBecomeaDeveloper).
+- ![Cloud Resume Challenge] (https://cloudresumechallenge.dev/);
+- ![ Static Web Hosting on AWS Series: Terraform Modules & GitHub Actions] (https://www.youtube.com/playlist?list=PLfmMgg_VrrlAz4s0UxLCdgZlcw2iCqVrD);
+- ![Responsive Portfolio Website From Scratch] (https://www.youtube.com/watch?v=ldwlOzRvYOU&list=LL&index=13&t=6401s&ab_channel=HowtoBecomeaDeveloper).
