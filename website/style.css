@@ -262,55 +262,6 @@ section {
   gap: 1rem;
 }
 
-/* PROJECTS SECTION */
-
-.details-container {
-  padding: 1.5rem;
-  flex: 1;
-  background: white;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  text-align: center;
-}
-
-#projects {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: fit-content;
-  width: auto;
-}
-
-.color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
-}
-
-.project-img {
-  border-radius: 2rem;
-  max-width: 50%;
-  max-height: 50%;
-}
-
-.section__pic-container {
-  display: flex;
-  margin: flex 0;
-}
-
-.project-title {
-  margin: 1rem;
-  color: black;
-  justify-content: center;
-}
-
-.project-btn {
-  color: black;
-  border-color: rgb(163, 163, 163);
-}
-
 /* CONTACT */
 
 #contact {
