@@ -1,1 +1,1 @@
-variable "table_name" {}
+variable "table_name_views" {}

@@ -1,6 +1,6 @@
 # DynamoDB Table for views counter
 resource "aws_dynamodb_table" "views_table" {
-  name         = var.table_name
+  name         = var.table_name_views
   billing_mode = "PAY_PER_REQUEST"
   hash_key     = "Views"
 
@@ -14,6 +14,6 @@ resource "aws_dynamodb_table" "views_table" {
   }
 
   tags = {
-    Name = var.table_name
+    Name = var.table_name_views
   }
 }
