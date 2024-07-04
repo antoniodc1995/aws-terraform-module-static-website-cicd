@@ -25,5 +25,5 @@ output "aws_cloudfront_distribution_id" {
 
 output "dynamodb_table_name" {
   description = "The name of the DynamoDB table"
-  value = module.dynamodb_table.dynamodb_table_name.name
+  value = module.dynamodb_table.views_table.name
 }
