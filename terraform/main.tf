@@ -43,7 +43,7 @@ module "cloudfront" {
   root_domain                               = module.dns_acm.root_domain
 }
 
-module "DynamoDB" {
-  source = "./modules/dynamodb_table"
-  table_name = var.table_name
+module "dynamodb_table" {
+  source                                    = "./modules/dynamodb_table"
+  table_name                                = var.table_name
 }
