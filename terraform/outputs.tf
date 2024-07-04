@@ -22,3 +22,8 @@ output "aws_cloudfront_distribution_id" {
   description = "The ID of the CloudFront distribution"
   value = module.cloudfront.aws_cloudfront_distribution_id
 }
+
+output "table_name" {
+  description = "The name of the DynamoDB table"
+  value = aws_dynamodb_table.views_table
+}
