@@ -10,3 +10,4 @@ website_bucket = "antoniodececio.com"
 force_destroy = false
 index_document = "index.html"
 versioning_enabled = "Enabled"
+table_name_views = "views_table"

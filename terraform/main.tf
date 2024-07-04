@@ -45,5 +45,5 @@ module "cloudfront" {
 
 module "dynamodb" {
   source                                    = "./modules/dynamodb_table"
-  table_name                                = var.table_name
+  table_name_views                          = var.table_name_views
 }
